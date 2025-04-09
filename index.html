@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yoz-Biology entrance examination</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="container-header">
+            <h1><span><i class="fa fa-car" aria-hidden="true"></i>Biology </span>(EUEE 2017 E.C)</h1>
+        </div>
+        <div class="content" id="question_header"><p style="font-size: 23px; color: white; background-color:black; border-radius: 5px;">Welcome to biology entrance examination.  Dear student  before you take the exam please insert the following information!!!</p>
+            <ol>
+                <li>Full name</li>
+                <li>Gender</li>
+                <li>Age</li>
+                <li>Nationality</li>
+                <li>Subject</li>
+                <li>Stream</li>
+                <li>Reigon</li>
+                <li>Bookletcode</li>
+                <li>Reg.No</li>
+                <li>School name</li>
+                <li>School code</li>
+            </ol>
+        
+        </div>
+        <button id="myBtn" class="btn">Enter in to information page  >>></button>
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>BIOLOGY(EUEE)</h2>
+            </div>
+                <form>
+                    <div id="form_div">
+                       <div id="form_left">
+                          Full name:<br>
+                          Gender:<br>
+                          Age:<br>
+                          Nationality:<br>
+                          Subject:<br>
+                          Stream:<br>
+                          Reigon:<br>
+                          Bookletcode:<br>
+                          Reg.No:<br>
+                          School name:<br>
+                          School code:<br>
+                       </div>
+                       <div id="form_right">
+                          <input type="text" id="name" placeholder="full name...">
+
+                          <select id="gender">gender
+                              <option value=""></option>
+                              <option value="male">Male</option>
+                              <option value="female">Female</option>
+                           </select>
+
+                            <div id="slide_container">
+                               <input type="range" id="age" min="16" max="75" value="24" class="slider" style="margin-top: 19px; background-color: rgb(219, 215, 211);" >
+                               <span id="ageRange"></span>
+                            </div>
+                               <input type="text" id="nationality" placeholder="nationality..." style="margin-top: 11px;">
+                               <input type="text" id="subject" placeholder="Subject..." style="margin-top: 11px;">
+                               <input type="text" id="stream" placeholder="Stream" style="margin-top: 11px;">
+                               <input type="text" id="reigon" placeholder="Reigon" style="margin-top: 11px;">
+                               <input type="number" id="bookletcode" placeholder="Booklet code" style="margin-top: 11px;">
+                               <input type="number" id="regno" placeholder="Reg.No" style="margin-top: 11px;">
+                               <input type="text" id="Schoolname" placeholder="School name" style="margin-top: 11px;">
+                               <input type="number" id="Schoolcode" placeholder="School code" style="margin-top: 11px;">
+                        </div>
+
+                               <button class="btn2" onclick="sendStudentInfo(event)">Enter in to exam page paper >>></button>
+
+                    </div>
+                </form>
+            <div class="modal-body"></div>
+            <div class="modal-footer"><p>Welcome to biology entrance examination.  Dear student  before you take the exam please insert the following information!!!</p></div>
+        </div>
+    </div>
+            <script src="scripts.js"></script>
+</body>
+</html>
